@@ -1,0 +1,38 @@
+.myModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    left: 0;
+    display: none;
+    background: rgba(0,0,0, 0.5);
+}
+
+.myModalContent {
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    min-width: 250px;
+}
+
+
+.myModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-enter {
+    opacity: 0;
+}
+.post-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+}
+.post-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
